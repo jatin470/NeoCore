@@ -1,9 +1,9 @@
-
----
-
-## 📄 4. `run.sh` (Launch script)
-
-```bash
 #!/bin/bash
-echo "🚀 Launching NeoCore..."
-rustc core.rs -o neocore && ./neocore
+
+echo "🧠 Starting NeoCore..."
+
+# Build the Rust project
+cargo build --release
+
+# Run the executable
+./target/release/neocore

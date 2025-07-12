@@ -6,7 +6,8 @@ use std::io::{BufRead, BufReader};
 pub fn think(input: &str, _config: &str, _memory: &crate::memory::Memory) -> String {
     let model_path = "brain/llama-3-8b-instruct.Q4_K_M.gguf";
 
-    let mut cmd = Command::new("./llama.cpp/main") // Adjust path if needed
+    let mut cmd = Command::new("llama.cpp/build/bin/llama")
+
         .args(&[
             "-m", model_path,
             "-p", input,

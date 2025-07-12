@@ -1,7 +1,7 @@
 [neo]
 name = "NeoCore"
 language = "en"
-model_path = "brain/llama-3-mini.Q4_K_M.gguf"
+model_path = "brain/llama-3-8b-instruct.Q4_K_M.gguf"
 quant = "Q4_K_M"
 temperature = 0.7
 top_p = 0.9
